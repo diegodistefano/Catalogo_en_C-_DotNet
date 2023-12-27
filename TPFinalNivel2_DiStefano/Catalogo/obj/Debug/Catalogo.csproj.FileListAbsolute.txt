@@ -1,0 +1,11 @@
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\Catalogo.exe.config
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\Catalogo.exe
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\Catalogo.pdb
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.csproj.AssemblyReference.cache
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.frmCatalogo.resources
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.Properties.Resources.resources
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.csproj.GenerateResource.cache
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.exe
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.pdb
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.frmAgregarArticulo.resources
