@@ -57,17 +57,16 @@ namespace Catalogo
             this.dgvCatalogo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCatalogo.Size = new System.Drawing.Size(632, 420);
             this.dgvCatalogo.TabIndex = 0;
-            this.dgvCatalogo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCatalogo_CellContentClick);
+            this.dgvCatalogo.SelectionChanged += new System.EventHandler(this.dgvCatalogo_SelectionChanged);
             // 
             // pboxCatalogo
             // 
             this.pboxCatalogo.Location = new System.Drawing.Point(653, 99);
             this.pboxCatalogo.Name = "pboxCatalogo";
             this.pboxCatalogo.Size = new System.Drawing.Size(200, 257);
-            this.pboxCatalogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pboxCatalogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxCatalogo.TabIndex = 1;
             this.pboxCatalogo.TabStop = false;
-            this.pboxCatalogo.Click += new System.EventHandler(this.pboxCatalogo_Click);
             // 
             // btnBuscar
             // 

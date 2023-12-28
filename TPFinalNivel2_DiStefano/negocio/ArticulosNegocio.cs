@@ -16,7 +16,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("Select Codigo, Nombre, A.Descripcion, ImagenUrl, Precio, A.Id, A.IdCategoria, A.IdMarca, C.Descripcion, M.Descripcion From ARTICULOS A, CATEGORIAS C, MARCAS M");
+                datos.setearConsulta("Select Codigo, Nombre, A.Descripcion, ImagenUrl, Precio, A.Id, C.Descripcion Categoria, M.Descripcion Marca From ARTICULOS A, CATEGORIAS C, MARCAS M Where C.Id = A.IdCategoria and  M.Id = A.IdMarca");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -26,10 +26,19 @@ namespace negocio
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
+
+                    //marca
+                    //aux.Categoria = new Categorias();
+                    //aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
+                    //aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+
+                    aux.Categoria = new Categorias();
+                    aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+
                     if (!(datos.Lector["ImagenUrl"] is DBNull))
                         aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
-                    aux.Precio = datos.Lector.GetDecimal(4); 
-                    
+                    aux.Precio = datos.Lector.GetDecimal(4);
+                                        
                     lista.Add(aux);
                 }
 

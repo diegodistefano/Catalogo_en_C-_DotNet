@@ -27,6 +27,15 @@ namespace Catalogo
             cargarImagen(listaArticulos[0].ImagenUrl);
         }
 
+        private void dgvCatalogo_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvCatalogo.CurrentRow != null)
+            {
+                Articulos seleccionado = (Articulos)dgvCatalogo.CurrentRow.DataBoundItem;
+                cargarImagen(seleccionado.ImagenUrl);
+            }
+        }
+
         private void cargar()
         {
             ArticulosNegocio negocio = new ArticulosNegocio();
@@ -64,16 +73,6 @@ namespace Catalogo
             {
                 pboxCatalogo.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
             }
-        }
-
-        private void pboxCatalogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvCatalogo_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
