@@ -22,7 +22,7 @@ namespace dominio
         [DisplayName("Ruta de Imagen")]
         public string ImagenUrl { get; set; }
 
-        public float Precio { get; set; }
+        public decimal Precio { get; set; }
 
         public Marcas Marca { get; set; }
 

@@ -51,21 +51,23 @@ namespace Catalogo
             this.dgvCatalogo.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvCatalogo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCatalogo.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvCatalogo.Location = new System.Drawing.Point(249, 25);
+            this.dgvCatalogo.Location = new System.Drawing.Point(15, 99);
             this.dgvCatalogo.MultiSelect = false;
             this.dgvCatalogo.Name = "dgvCatalogo";
             this.dgvCatalogo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCatalogo.Size = new System.Drawing.Size(400, 400);
+            this.dgvCatalogo.Size = new System.Drawing.Size(632, 420);
             this.dgvCatalogo.TabIndex = 0;
+            this.dgvCatalogo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCatalogo_CellContentClick);
             // 
             // pboxCatalogo
             // 
-            this.pboxCatalogo.Location = new System.Drawing.Point(667, 25);
+            this.pboxCatalogo.Location = new System.Drawing.Point(653, 99);
             this.pboxCatalogo.Name = "pboxCatalogo";
-            this.pboxCatalogo.Size = new System.Drawing.Size(200, 200);
-            this.pboxCatalogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxCatalogo.Size = new System.Drawing.Size(200, 257);
+            this.pboxCatalogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pboxCatalogo.TabIndex = 1;
             this.pboxCatalogo.TabStop = false;
+            this.pboxCatalogo.Click += new System.EventHandler(this.pboxCatalogo_Click);
             // 
             // btnBuscar
             // 
@@ -73,9 +75,9 @@ namespace Catalogo
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnBuscar.FlatAppearance.BorderSize = 2;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(15, 152);
+            this.btnBuscar.Location = new System.Drawing.Point(672, 30);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(218, 28);
+            this.btnBuscar.Size = new System.Drawing.Size(150, 25);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -86,9 +88,9 @@ namespace Catalogo
             this.btnAgregarArticulo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAgregarArticulo.FlatAppearance.BorderSize = 2;
             this.btnAgregarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarArticulo.Location = new System.Drawing.Point(15, 186);
+            this.btnAgregarArticulo.Location = new System.Drawing.Point(15, 68);
             this.btnAgregarArticulo.Name = "btnAgregarArticulo";
-            this.btnAgregarArticulo.Size = new System.Drawing.Size(218, 28);
+            this.btnAgregarArticulo.Size = new System.Drawing.Size(200, 25);
             this.btnAgregarArticulo.TabIndex = 4;
             this.btnAgregarArticulo.Text = "Agregar artículo";
             this.btnAgregarArticulo.UseVisualStyleBackColor = false;
@@ -98,9 +100,9 @@ namespace Catalogo
             this.btnModificarArticulo.BackColor = System.Drawing.Color.Gray;
             this.btnModificarArticulo.FlatAppearance.BorderSize = 2;
             this.btnModificarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarArticulo.Location = new System.Drawing.Point(15, 220);
+            this.btnModificarArticulo.Location = new System.Drawing.Point(232, 68);
             this.btnModificarArticulo.Name = "btnModificarArticulo";
-            this.btnModificarArticulo.Size = new System.Drawing.Size(218, 28);
+            this.btnModificarArticulo.Size = new System.Drawing.Size(200, 25);
             this.btnModificarArticulo.TabIndex = 5;
             this.btnModificarArticulo.Text = "Modificar artículo";
             this.btnModificarArticulo.UseVisualStyleBackColor = false;
@@ -112,9 +114,9 @@ namespace Catalogo
             this.btnEliminarArticulo.FlatAppearance.BorderSize = 2;
             this.btnEliminarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarArticulo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEliminarArticulo.Location = new System.Drawing.Point(15, 254);
+            this.btnEliminarArticulo.Location = new System.Drawing.Point(446, 68);
             this.btnEliminarArticulo.Name = "btnEliminarArticulo";
-            this.btnEliminarArticulo.Size = new System.Drawing.Size(218, 28);
+            this.btnEliminarArticulo.Size = new System.Drawing.Size(200, 25);
             this.btnEliminarArticulo.TabIndex = 6;
             this.btnEliminarArticulo.Text = "Eliminar artículo";
             this.btnEliminarArticulo.UseVisualStyleBackColor = false;
@@ -125,9 +127,9 @@ namespace Catalogo
             this.cboxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCampo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboxCampo.FormattingEnabled = true;
-            this.cboxCampo.Location = new System.Drawing.Point(70, 56);
+            this.cboxCampo.Location = new System.Drawing.Point(59, 32);
             this.cboxCampo.Name = "cboxCampo";
-            this.cboxCampo.Size = new System.Drawing.Size(163, 21);
+            this.cboxCampo.Size = new System.Drawing.Size(150, 21);
             this.cboxCampo.TabIndex = 0;
             // 
             // cboxCriterio
@@ -136,9 +138,9 @@ namespace Catalogo
             this.cboxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCriterio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboxCriterio.FormattingEnabled = true;
-            this.cboxCriterio.Location = new System.Drawing.Point(70, 88);
+            this.cboxCriterio.Location = new System.Drawing.Point(278, 32);
             this.cboxCriterio.Name = "cboxCriterio";
-            this.cboxCriterio.Size = new System.Drawing.Size(163, 21);
+            this.cboxCriterio.Size = new System.Drawing.Size(150, 21);
             this.cboxCriterio.TabIndex = 1;
             // 
             // lblFiltrarArticulos
@@ -147,7 +149,7 @@ namespace Catalogo
             this.lblFiltrarArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblFiltrarArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltrarArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblFiltrarArticulos.Location = new System.Drawing.Point(80, 25);
+            this.lblFiltrarArticulos.Location = new System.Drawing.Point(14, 9);
             this.lblFiltrarArticulos.Name = "lblFiltrarArticulos";
             this.lblFiltrarArticulos.Size = new System.Drawing.Size(93, 13);
             this.lblFiltrarArticulos.TabIndex = 13;
@@ -158,7 +160,7 @@ namespace Catalogo
             this.lblCampo.AutoSize = true;
             this.lblCampo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCampo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblCampo.Location = new System.Drawing.Point(14, 59);
+            this.lblCampo.Location = new System.Drawing.Point(14, 35);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(43, 13);
             this.lblCampo.TabIndex = 14;
@@ -169,7 +171,7 @@ namespace Catalogo
             this.lblCriterio.AutoSize = true;
             this.lblCriterio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCriterio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblCriterio.Location = new System.Drawing.Point(14, 91);
+            this.lblCriterio.Location = new System.Drawing.Point(233, 35);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(42, 13);
             this.lblCriterio.TabIndex = 15;
@@ -180,7 +182,7 @@ namespace Catalogo
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblFiltro.Location = new System.Drawing.Point(14, 124);
+            this.lblFiltro.Location = new System.Drawing.Point(454, 36);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(32, 13);
             this.lblFiltro.TabIndex = 16;
@@ -191,9 +193,9 @@ namespace Catalogo
             this.txtFiltro.BackColor = System.Drawing.Color.White;
             this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltro.ForeColor = System.Drawing.Color.Black;
-            this.txtFiltro.Location = new System.Drawing.Point(70, 121);
+            this.txtFiltro.Location = new System.Drawing.Point(487, 33);
             this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(163, 20);
+            this.txtFiltro.Size = new System.Drawing.Size(150, 20);
             this.txtFiltro.TabIndex = 2;
             // 
             // frmCatalogo
@@ -201,7 +203,7 @@ namespace Catalogo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.ClientSize = new System.Drawing.Size(860, 537);
             this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.lblFiltro);
             this.Controls.Add(this.lblCriterio);
