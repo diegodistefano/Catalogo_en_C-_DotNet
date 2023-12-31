@@ -1,7 +1,7 @@
 ﻿
 namespace Catalogo
 {
-    partial class frmAgregarArticulo
+    partial class frmAltaArticulo
     {
         /// <summary>
         /// Required designer variable.
@@ -43,12 +43,12 @@ namespace Catalogo
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtUrlImagen = new System.Windows.Forms.TextBox();
+            this.txtImagenUrl = new System.Windows.Forms.TextBox();
             this.btnAgregarImagen = new System.Windows.Forms.Button();
             this.lblValidacionImagen = new System.Windows.Forms.Label();
             this.lblArchivoImagen = new System.Windows.Forms.Label();
             this.cboxCategoria = new System.Windows.Forms.ComboBox();
-            this.cboxCampo = new System.Windows.Forms.ComboBox();
+            this.cboxMarca = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAgregarArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,33 +63,39 @@ namespace Catalogo
             // 
             // btnAgregarNuevoArticulo
             // 
-            this.btnAgregarNuevoArticulo.BackColor = System.Drawing.Color.Gray;
+            this.btnAgregarNuevoArticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(61)))));
+            this.btnAgregarNuevoArticulo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAgregarNuevoArticulo.FlatAppearance.BorderSize = 2;
             this.btnAgregarNuevoArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarNuevoArticulo.ForeColor = System.Drawing.Color.White;
             this.btnAgregarNuevoArticulo.Location = new System.Drawing.Point(148, 248);
             this.btnAgregarNuevoArticulo.Name = "btnAgregarNuevoArticulo";
             this.btnAgregarNuevoArticulo.Size = new System.Drawing.Size(75, 28);
             this.btnAgregarNuevoArticulo.TabIndex = 8;
             this.btnAgregarNuevoArticulo.Text = "Agregar";
             this.btnAgregarNuevoArticulo.UseVisualStyleBackColor = false;
+            this.btnAgregarNuevoArticulo.Click += new System.EventHandler(this.btnAgregarNuevoArticulo_Click);
             // 
             // btnCancelarArticulo
             // 
-            this.btnCancelarArticulo.BackColor = System.Drawing.Color.Gray;
+            this.btnCancelarArticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(61)))));
+            this.btnCancelarArticulo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancelarArticulo.FlatAppearance.BorderSize = 2;
             this.btnCancelarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarArticulo.ForeColor = System.Drawing.Color.White;
             this.btnCancelarArticulo.Location = new System.Drawing.Point(260, 248);
             this.btnCancelarArticulo.Name = "btnCancelarArticulo";
             this.btnCancelarArticulo.Size = new System.Drawing.Size(75, 28);
             this.btnCancelarArticulo.TabIndex = 9;
             this.btnCancelarArticulo.Text = "Cancelar";
             this.btnCancelarArticulo.UseVisualStyleBackColor = false;
+            this.btnCancelarArticulo.Click += new System.EventHandler(this.btnCancelarArticulo_Click);
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblCodigo.ForeColor = System.Drawing.Color.White;
             this.lblCodigo.Location = new System.Drawing.Point(16, 19);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(43, 13);
@@ -99,8 +105,8 @@ namespace Catalogo
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
             this.lblNombre.Location = new System.Drawing.Point(16, 46);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
@@ -110,8 +116,8 @@ namespace Catalogo
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblDescripcion.ForeColor = System.Drawing.Color.White;
             this.lblDescripcion.Location = new System.Drawing.Point(16, 72);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
@@ -121,8 +127,8 @@ namespace Catalogo
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblPrecio.ForeColor = System.Drawing.Color.White;
             this.lblPrecio.Location = new System.Drawing.Point(16, 99);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(37, 13);
@@ -132,8 +138,8 @@ namespace Catalogo
             // lblUrlImagen
             // 
             this.lblUrlImagen.AutoSize = true;
-            this.lblUrlImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblUrlImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblUrlImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblUrlImagen.ForeColor = System.Drawing.Color.White;
             this.lblUrlImagen.Location = new System.Drawing.Point(16, 126);
             this.lblUrlImagen.Name = "lblUrlImagen";
             this.lblUrlImagen.Size = new System.Drawing.Size(73, 13);
@@ -143,8 +149,8 @@ namespace Catalogo
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblCategoria.ForeColor = System.Drawing.Color.White;
             this.lblCategoria.Location = new System.Drawing.Point(16, 184);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(54, 13);
@@ -154,8 +160,8 @@ namespace Catalogo
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblMarca.ForeColor = System.Drawing.Color.White;
             this.lblMarca.Location = new System.Drawing.Point(16, 214);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(37, 13);
@@ -194,32 +200,35 @@ namespace Catalogo
             this.txtPrecio.Size = new System.Drawing.Size(140, 20);
             this.txtPrecio.TabIndex = 3;
             // 
-            // txtUrlImagen
+            // txtImagenUrl
             // 
-            this.txtUrlImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUrlImagen.Location = new System.Drawing.Point(114, 123);
-            this.txtUrlImagen.Name = "txtUrlImagen";
-            this.txtUrlImagen.Size = new System.Drawing.Size(140, 20);
-            this.txtUrlImagen.TabIndex = 4;
+            this.txtImagenUrl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtImagenUrl.Location = new System.Drawing.Point(114, 123);
+            this.txtImagenUrl.Name = "txtImagenUrl";
+            this.txtImagenUrl.Size = new System.Drawing.Size(140, 20);
+            this.txtImagenUrl.TabIndex = 4;
             // 
             // btnAgregarImagen
             // 
-            this.btnAgregarImagen.BackColor = System.Drawing.Color.Gray;
+            this.btnAgregarImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(61)))));
+            this.btnAgregarImagen.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAgregarImagen.FlatAppearance.BorderSize = 2;
             this.btnAgregarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarImagen.ForeColor = System.Drawing.Color.White;
             this.btnAgregarImagen.Location = new System.Drawing.Point(114, 149);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
             this.btnAgregarImagen.Size = new System.Drawing.Size(140, 25);
             this.btnAgregarImagen.TabIndex = 5;
             this.btnAgregarImagen.Text = "Cargar imagen";
             this.btnAgregarImagen.UseVisualStyleBackColor = false;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
             // 
             // lblValidacionImagen
             // 
             this.lblValidacionImagen.AutoSize = true;
-            this.lblValidacionImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblValidacionImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.lblValidacionImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValidacionImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblValidacionImagen.ForeColor = System.Drawing.Color.White;
             this.lblValidacionImagen.Location = new System.Drawing.Point(17, 162);
             this.lblValidacionImagen.Name = "lblValidacionImagen";
             this.lblValidacionImagen.Size = new System.Drawing.Size(68, 12);
@@ -229,8 +238,8 @@ namespace Catalogo
             // lblArchivoImagen
             // 
             this.lblArchivoImagen.AutoSize = true;
-            this.lblArchivoImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblArchivoImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblArchivoImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.lblArchivoImagen.ForeColor = System.Drawing.Color.White;
             this.lblArchivoImagen.Location = new System.Drawing.Point(16, 149);
             this.lblArchivoImagen.Name = "lblArchivoImagen";
             this.lblArchivoImagen.Size = new System.Drawing.Size(96, 13);
@@ -248,29 +257,29 @@ namespace Catalogo
             this.cboxCategoria.Size = new System.Drawing.Size(140, 21);
             this.cboxCategoria.TabIndex = 6;
             // 
-            // cboxCampo
+            // cboxMarca
             // 
-            this.cboxCampo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCampo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboxCampo.FormattingEnabled = true;
-            this.cboxCampo.Location = new System.Drawing.Point(114, 211);
-            this.cboxCampo.Name = "cboxCampo";
-            this.cboxCampo.Size = new System.Drawing.Size(140, 21);
-            this.cboxCampo.TabIndex = 7;
+            this.cboxMarca.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboxMarca.FormattingEnabled = true;
+            this.cboxMarca.Location = new System.Drawing.Point(114, 211);
+            this.cboxMarca.Name = "cboxMarca";
+            this.cboxMarca.Size = new System.Drawing.Size(140, 21);
+            this.cboxMarca.TabIndex = 7;
             // 
-            // frmAgregarArticulo
+            // frmAltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(496, 292);
-            this.Controls.Add(this.cboxCampo);
+            this.Controls.Add(this.cboxMarca);
             this.Controls.Add(this.cboxCategoria);
             this.Controls.Add(this.lblArchivoImagen);
             this.Controls.Add(this.lblValidacionImagen);
             this.Controls.Add(this.btnAgregarImagen);
-            this.Controls.Add(this.txtUrlImagen);
+            this.Controls.Add(this.txtImagenUrl);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
@@ -286,10 +295,11 @@ namespace Catalogo
             this.Controls.Add(this.btnAgregarNuevoArticulo);
             this.Controls.Add(this.pboxAgregarArticulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAgregarArticulo";
+            this.Name = "frmAltaArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Url de Imagen";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Load += new System.EventHandler(this.frmAltaArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pboxAgregarArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,11 +322,11 @@ namespace Catalogo
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtUrlImagen;
+        private System.Windows.Forms.TextBox txtImagenUrl;
         private System.Windows.Forms.Button btnAgregarImagen;
         private System.Windows.Forms.Label lblValidacionImagen;
         private System.Windows.Forms.Label lblArchivoImagen;
         private System.Windows.Forms.ComboBox cboxCategoria;
-        private System.Windows.Forms.ComboBox cboxCampo;
+        private System.Windows.Forms.ComboBox cboxMarca;
     }
 }

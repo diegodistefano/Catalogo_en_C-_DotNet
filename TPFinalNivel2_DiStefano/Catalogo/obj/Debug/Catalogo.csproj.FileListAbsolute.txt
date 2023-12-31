@@ -8,9 +8,9 @@ C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Deb
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.exe
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.pdb
-C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.frmAgregarArticulo.resources
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\dominio.dll
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\negocio.dll
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\dominio.pdb
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\negocio.pdb
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.csproj.CopyComplete
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.frmAltaArticulo.resources

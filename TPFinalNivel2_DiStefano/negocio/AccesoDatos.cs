@@ -62,8 +62,8 @@ namespace negocio
 
         public void cerrarConexion()
         {
-            if (lector != null)
-                lector.Close();
+            if (Lector != null)
+                Lector.Close();
             conexion.Close();
         }
     }

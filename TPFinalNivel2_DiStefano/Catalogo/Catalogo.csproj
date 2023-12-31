@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAgregarArticulo.cs">
+    <Compile Include="frmAltaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarArticulo.Designer.cs">
-      <DependentUpon>frmAgregarArticulo.cs</DependentUpon>
+    <Compile Include="frmAltaArticulo.Designer.cs">
+      <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCatalogo.cs">
       <SubType>Form</SubType>
@@ -60,8 +61,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAgregarArticulo.resx">
-      <DependentUpon>frmAgregarArticulo.cs</DependentUpon>
+    <EmbeddedResource Include="frmAltaArticulo.resx">
+      <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatalogo.resx">
       <DependentUpon>frmCatalogo.cs</DependentUpon>

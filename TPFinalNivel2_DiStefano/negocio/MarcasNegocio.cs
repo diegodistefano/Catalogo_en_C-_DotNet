@@ -16,8 +16,17 @@ namespace negocio
 
             try
             {
+                datos.setearConsulta("Select Id, Descripcion from MARCAS");
+                datos.ejecutarLectura();
 
+                while (datos.Lector.Read())
+                {
+                    Marcas aux = new Marcas();
+                    aux.Id = (int)datos.Lector["Id"];
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
 
+                    lista.Add(aux);
+                }
                 return lista;
             }
             catch (Exception ex)
@@ -27,7 +36,7 @@ namespace negocio
             }
             finally
             {
-
+                datos.cerrarConexion();
             }
         }
     }
