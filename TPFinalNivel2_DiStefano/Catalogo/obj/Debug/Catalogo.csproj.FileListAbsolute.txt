@@ -14,3 +14,4 @@ C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Deb
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\bin\Debug\negocio.pdb
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.csproj.CopyComplete
 C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.frmAltaArticulo.resources
+C:\Users\Administrador\Desktop\catalogo\TPFinalNivel2_DiStefano\Catalogo\obj\Debug\Catalogo.frmNuevaMarcaCategoria.resources

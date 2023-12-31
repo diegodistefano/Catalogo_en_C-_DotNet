@@ -49,6 +49,7 @@ namespace Catalogo
             this.lblArchivoImagen = new System.Windows.Forms.Label();
             this.cboxCategoria = new System.Windows.Forms.ComboBox();
             this.cboxMarca = new System.Windows.Forms.ComboBox();
+            this.btnMarcaCategoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAgregarArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@ namespace Catalogo
             // 
             this.pboxAgregarArticulo.Location = new System.Drawing.Point(263, 16);
             this.pboxAgregarArticulo.Name = "pboxAgregarArticulo";
-            this.pboxAgregarArticulo.Size = new System.Drawing.Size(216, 216);
+            this.pboxAgregarArticulo.Size = new System.Drawing.Size(216, 246);
             this.pboxAgregarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxAgregarArticulo.TabIndex = 0;
             this.pboxAgregarArticulo.TabStop = false;
@@ -68,7 +69,7 @@ namespace Catalogo
             this.btnAgregarNuevoArticulo.FlatAppearance.BorderSize = 2;
             this.btnAgregarNuevoArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarNuevoArticulo.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarNuevoArticulo.Location = new System.Drawing.Point(148, 248);
+            this.btnAgregarNuevoArticulo.Location = new System.Drawing.Point(151, 278);
             this.btnAgregarNuevoArticulo.Name = "btnAgregarNuevoArticulo";
             this.btnAgregarNuevoArticulo.Size = new System.Drawing.Size(75, 28);
             this.btnAgregarNuevoArticulo.TabIndex = 8;
@@ -83,7 +84,7 @@ namespace Catalogo
             this.btnCancelarArticulo.FlatAppearance.BorderSize = 2;
             this.btnCancelarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarArticulo.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarArticulo.Location = new System.Drawing.Point(260, 248);
+            this.btnCancelarArticulo.Location = new System.Drawing.Point(263, 278);
             this.btnCancelarArticulo.Name = "btnCancelarArticulo";
             this.btnCancelarArticulo.Size = new System.Drawing.Size(75, 28);
             this.btnCancelarArticulo.TabIndex = 9;
@@ -162,7 +163,7 @@ namespace Catalogo
             this.lblMarca.AutoSize = true;
             this.lblMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.lblMarca.ForeColor = System.Drawing.Color.White;
-            this.lblMarca.Location = new System.Drawing.Point(16, 214);
+            this.lblMarca.Location = new System.Drawing.Point(16, 213);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(37, 13);
             this.lblMarca.TabIndex = 9;
@@ -263,17 +264,33 @@ namespace Catalogo
             this.cboxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboxMarca.FormattingEnabled = true;
-            this.cboxMarca.Location = new System.Drawing.Point(114, 211);
+            this.cboxMarca.Location = new System.Drawing.Point(114, 210);
             this.cboxMarca.Name = "cboxMarca";
             this.cboxMarca.Size = new System.Drawing.Size(140, 21);
             this.cboxMarca.TabIndex = 7;
+            // 
+            // btnMarcaCategoria
+            // 
+            this.btnMarcaCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(61)))));
+            this.btnMarcaCategoria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnMarcaCategoria.FlatAppearance.BorderSize = 2;
+            this.btnMarcaCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcaCategoria.ForeColor = System.Drawing.Color.White;
+            this.btnMarcaCategoria.Location = new System.Drawing.Point(114, 237);
+            this.btnMarcaCategoria.Name = "btnMarcaCategoria";
+            this.btnMarcaCategoria.Size = new System.Drawing.Size(140, 25);
+            this.btnMarcaCategoria.TabIndex = 19;
+            this.btnMarcaCategoria.Text = "Nueva Marca / Categoria";
+            this.btnMarcaCategoria.UseVisualStyleBackColor = false;
+            this.btnMarcaCategoria.Click += new System.EventHandler(this.btnMarcaCategoria_Click);
             // 
             // frmAltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(496, 292);
+            this.ClientSize = new System.Drawing.Size(496, 321);
+            this.Controls.Add(this.btnMarcaCategoria);
             this.Controls.Add(this.cboxMarca);
             this.Controls.Add(this.cboxCategoria);
             this.Controls.Add(this.lblArchivoImagen);
@@ -328,5 +345,6 @@ namespace Catalogo
         private System.Windows.Forms.Label lblArchivoImagen;
         private System.Windows.Forms.ComboBox cboxCategoria;
         private System.Windows.Forms.ComboBox cboxMarca;
+        private System.Windows.Forms.Button btnMarcaCategoria;
     }
 }

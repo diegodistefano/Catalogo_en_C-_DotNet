@@ -146,6 +146,11 @@ namespace Catalogo
                 MessageBox.Show(ex.ToString());
             }
         }
-        
+
+        private void btnMarcaCategoria_Click(object sender, EventArgs e)
+        {
+            frmNuevaMarcaCategoria nuevaMarCat = new frmNuevaMarcaCategoria();
+            nuevaMarCat.ShowDialog();
+        }
     }
 }
